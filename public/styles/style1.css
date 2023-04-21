@@ -1,5 +1,5 @@
-* { --original-theme-background: rgb(245, 252, 178);
-    --original-theme-background_a: rgb(246, 251, 195);
+* { --original-theme-background: rgb(238, 240, 219);
+    --original-theme-background_a: rgb(196, 242, 241);
     --original-theme-background1: rgb(204, 178, 210);
     --original-theme-background2: rgb(173, 150, 110);
     --original-theme-text: rgb(49, 50, 37);
@@ -76,7 +76,7 @@ section {flex: 70%};
 }
 
 h5 {
-  color:rgb(49, 50, 37);
+  color: var(--original-theme-background_a);
   font-size: 20px;
   text-align: center;
 }
