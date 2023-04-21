@@ -24,31 +24,31 @@ class Shape {
 
 module.exports = Shape;
 
-///////////////////////////////////////////
 
-class Triangle  extends Shape {
-    constructor(shape, color, text, output){
-        super(color, text, output);
-        this.shape = "triangle";
-    }
-};
 
-class Circle  extends Shape {
-    constructor(shape, color, text, output){
-        super(color, text, output);
-        this.shape = "circle";
-    }
-};
+// class Triangle  extends Shape {
+//     constructor(shape, color, text, output){
+//         super(color, text, output);
+//         this.shape = "triangle";
+//     }
+// };
 
-class Square  extends Shape {
-    constructor(shape, color, text, output){
-        super(color, text, output);
-        this.shape = "square";
-    }
-};
-///
-const shape1 = new Triangle("triangle", color, output);
-const shape2 = new Circle("circle", color, output);
-const shape3 = new Square("square", color, output);
+// class Circle  extends Shape {
+//     constructor(shape, color, text, output){
+//         super(color, text, output);
+//         this.shape = "circle";
+//     }
+// };
+
+// class Square  extends Shape {
+//     constructor(shape, color, text, output){
+//         super(color, text, output);
+//         this.shape = "square";
+//     }
+// };
+
+// const shape1 = new Triangle("triangle", color, output);
+// const shape2 = new Circle("circle", color, output);
+// const shape3 = new Square("square", color, output);
 
 

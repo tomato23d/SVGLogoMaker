@@ -5,7 +5,7 @@ const Shape = require('../lib/shapes');
 
  function drawShape(shape, color, text){
   const shape1 = new Shape(shape, color, text);
-  shape1.printLogoShape();
+  const section = shape1.printLogoShape();
  }
 
 const questions = [
@@ -24,7 +24,7 @@ const questions = [
     {
       type: 'input',
       name: 'text',
-      message: 'Please the logo text, up to three letters',
+      message: 'Please  enter the logo text, up to three letters',
     },
   ];
 
