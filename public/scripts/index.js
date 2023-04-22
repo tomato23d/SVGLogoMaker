@@ -1,12 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const Shape = require('../lib/shapes');
+const {Triangle, Circle, Square} = require('../lib/shapes');
 
-
- function drawShape(shape, color, text){
-  const shape1 = new Shape(shape, color, text);
-  const section = shape1.printLogoShape();
- }
 
 const questions = [
     {
@@ -30,9 +25,23 @@ const questions = [
 
 inquirer.prompt(questions)
 .then((answers)=>{
-    section = drawShape(answers);
-    const filename = "logoShow.html";
- fs.writeFile(filename, section, (err) =>
+    let userChoice;
+    if (answers.shape ==="circle"){
+      userChoice = new Circle(answers.text);
+      userChoice.setColor(answers.color);
+    }
+    else if (answers.shape ==="triangle"){
+      userChoice = new Triangle(answers.text);
+      userChoice.setColor(answers.color);
+    }
+    else {
+      userChoice = new Square(answers.text);
+      userChoice.setColor(answers.color);
+    }
+    console.log("userChoice "+ userChoice);
+    console.log("render " +userChoice.render());
+    const filename = `logo_${answers.shape}_${answers.color}.svg`;
+ fs.writeFile(filename, userChoice.render(), (err) =>
 { err ? console.log(err) : console.log('Success!')});
 
 })
