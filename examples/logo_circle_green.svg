@@ -1,5 +1,5 @@
 
      <svg width="300" height="200" viewBox="0 0 298 298" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-     <circle cx="150" cy="150" r="75" fill="blue" />
-     <text x="60" y ="80">AAA</text>
+     <circle cx="150" cy="150" r="75" fill="green" />
+     <text x="60" y ="80">AA</text>
      </svg>

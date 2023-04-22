@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const {Triangle, Circle, Square} = require('../lib/shapes');
+const {Triangle, Circle, Square} = require('./lib/shapes');
 
 
 const questions = [
@@ -41,7 +41,6 @@ inquirer.prompt(questions)
     console.log("userChoice "+ userChoice);
     console.log("render " +userChoice.render());
     const filename = `logo_${answers.shape}_${answers.color}.svg`;
- fs.writeFile(filename, userChoice.render(), (err) =>
+ fs.writeFile(`./examples/${filename}`, userChoice.render(), (err) =>
 { err ? console.log(err) : console.log('Success!')});
-
 })
