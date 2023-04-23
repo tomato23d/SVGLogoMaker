@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const {Triangle, Circle, Square} = require('./lib/shapes');
 
-
+//collect user input to create an svg file
 const questions = [
     {
       type: 'list',
@@ -23,6 +23,7 @@ const questions = [
     },
   ];
 
+//process user input into selected shape object to create the output file 
 inquirer.prompt(questions)
 .then((answers)=>{
     let userChoice;
